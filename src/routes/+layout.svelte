@@ -13,6 +13,7 @@
   import { themeChange } from "theme-change";
   import PageLoadTopBar from "$lib/components/PageLoadTopBar.svelte";
   import "../app.css";
+  import DownloadPopup from "$lib/components/Downloadpopup.svelte";
 
   export let data;
 
@@ -101,7 +102,7 @@
   </label>
 </label>
 <GlobalSearch />
-
+<DownloadPopup />
 <PageLoadTopBar />
 {#if $indstillinger?.sidebar && windowWidth > 768}
   <SideBar />
